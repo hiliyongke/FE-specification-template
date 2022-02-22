@@ -70,3 +70,33 @@ or as an npm script:
 
 安装指令和命令行的展示信息
   git-cz
+
+自定义提交规范
+https://github.com/leoforfree/cz-customizable
+npm i -D commitlint-config-cz  cz-customizable
+"config": {
+  "commitizen": {
+    "path": "node_modules/cz-customizable"
+  }
+}
+
+extends: ['@commitlint/config-conventional'], =====>   extends: ['cz'],
+
+提交规范
+
+'💪  WIP:',      // 开发中
+'✨  feat:',     // 新特性
+'🐛  fix:',      // 修补bug
+'🔨  refactor:', // 重构
+'📝  docs:',     // 文档
+'🔀  merge: ',   // 合并某个分支代码
+'✅  test:',     // 单元测试
+'📈  perf:',     // 性能提升
+'🗯  chore:',    // 其他修改
+'💄  ui:',       // ui样式修改
+'🎨  style:',    // 不影响代码的其他修改 （空白，格式，缺少半冒号等）
+'⏪  revert: ',  // 版本回退
+'📦  dep_up:',   // 更新编译的文件或包
+'🔧  CI:',       // 项目结构变动 工具 ci  构建
+'🚚  mv:',       // 移动或重命名文件
+'🚀  release:',  // 发布版本或标签
