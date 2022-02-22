@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "prettier --write . && eslint --fix --ext .js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
   "homepage": "https://github.com/gebilaofan/FE-specification-template#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^16.2.1",
+    "commitizen": "^4.2.4",
     "commitlint": "^16.2.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-prettier": "^4.0.0",

@@ -51,3 +51,22 @@ pre-commit 执行 npx lint-staged 指令
 规范commit message信息
 https://github.com/conventional-changelog/commitlint
 npm i commitlint @commitlint/config-conventional -D
+
+# Add hook
+npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
+
+安装辅助提交依赖
+commitizen cz-conventional-changelog
+https://github.com/commitizen/cz-cli
+npm set-script commit "git-cz"
+提交commit方式
+npx cz
+or as an npm script:
+
+  ...
+  "scripts": {
+    "commit": "cz"
+  }
+
+安装指令和命令行的展示信息
+  git-cz
