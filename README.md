@@ -11,9 +11,9 @@ Prettier 作为 代码格式化 工具
 "eslintIntegration": true, // 解决 Eslint 默认规则冲突
 
 parser @babel/eslint-parser @babel/core
-  parserOptions: {
-  sourceType: 'module',
-  requireConfigFile: 'false',
+parserOptions: {
+sourceType: 'module',
+requireConfigFile: 'false',
 },
 
 ## husky
